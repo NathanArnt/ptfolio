@@ -1,0 +1,123 @@
+.homePage {
+    .homePageContainer {
+        max-width: 1000px;
+        margin: auto;
+
+        .header {
+            padding: 30px 0;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.5rem;
+
+            .logo {
+                font-family: $font3;
+                color: var(--text-color);
+                span {
+                    color: $red;
+                }
+            }
+            #theme-switch {
+                background: rgba(128, 128, 128, 0.33);
+                border-radius: 50%;
+                height: 50px;
+                width: 50px;
+                padding: 0;
+                border: none;
+                color: white;
+                
+                font-size: 1.8rem;
+                cursor: pointer;
+                i {
+                    transition: 0.7s ease-in-out;
+                    &:hover {
+                        transform: rotateZ(360deg);
+                    }
+                }
+            }
+        }
+
+        .about {
+            margin: 20px auto;
+            max-width: 800px;
+            .aboutContainer {
+                .me {
+                    font-size: 1.3rem;
+                    text-align: center;
+                    h2 {
+                    text-align: center;
+                    font-weight: 100;
+                    }
+                    .prenom {
+                        margin: 10px 0 0 0;
+                        font-size: 2.2rem;
+                        font-weight: bold;
+                    } // prenom
+                    .title {
+                        margin: 10px auto 30px;
+                    }
+                    span {
+                        color: $red;
+                    }
+                } // me
+                .info {
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    
+                    img {
+                        margin-left: 70px;
+                        width: 80%;
+                        border-radius: 20px;
+                    } // img
+                } // info
+            } // aboutContainer
+        } // about
+
+        .skills {
+            max-width: 1000px;
+            margin: auto;
+
+            .skillsContainer {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr); /* Limite à trois colonnes */
+                gap: 10px; /* Espace entre les cartes */
+                text-align: center;
+                font-size: 4rem;
+                color: $red;
+
+                .skillsElement {
+                    &:hover {
+                        background-color: var(--bgskills-color);
+                    }
+                    p {
+                        font-size: 1rem;
+                        color: var(--text-color);
+                    }
+                } // skillsElement
+            } // skillsContainer
+        } // skills
+        .documents {
+            .documentsContainer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 0 50px 0;
+                button {
+                    background: none;
+                    border: 1.5px solid $red;
+                    border-radius: 10px;
+                    height: 65px;
+                    width: 180px;
+                    color: $white;
+                    transition: 0.2s ease-in-out;
+                    &:hover {
+                        cursor: pointer;
+                        background-color: $red;
+                    }
+                }
+                div {
+                    padding: 0 30px;
+                }
+            } // documentsContainer
+        } //documents
+    } // homePageContainer
+} //homePage

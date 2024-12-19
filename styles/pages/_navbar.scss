@@ -1,0 +1,28 @@
+.navBar {
+    position: fixed;
+    bottom: 0;
+    left: 25%;
+    min-width: 400px;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 30px auto;
+    background: linear-gradient(205deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+    .navBarContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 1.5rem;
+
+        a {
+            transition: 0.2s ease-out;
+            transform: scale(1);
+            color: var(--text-color);
+            &:hover {
+                transform: scale(1.2);
+                color: var(--texthover-color);
+            }
+        }
+    } //navBarContainer
+} //navBar

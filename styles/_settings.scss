@@ -1,0 +1,72 @@
+:root{
+    --base-color: rgba(255, 255, 255, 0.645);
+    --text-color: #2a2a2a;
+    --texthover-color: #686868; 
+    --bgskills-color: #ededed;
+  }
+  .darkmode{
+    --base-color: #323232;
+    --text-color: rgb(231, 231, 231);
+    --texthover-color: #ffffff; 
+    --bgskills-color: #535353;
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "CodeFont";
+    src: url(../assets/fonts/Code.otf);
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "Code";
+    src: url(../assets/fonts/Code2.ttf);
+}
+
+#theme-switch i:last-child{
+    display: none;
+}
+.darkmode #theme-switch i:first-child{
+    display: none;
+}
+.darkmode #theme-switch i:last-child{
+    display: block;
+}
+
+$font1: CodeFont,serif;
+$font2: Poppins,serif;
+$font3: Code,serif;
+
+$white: #d4d4d4;
+$red: rgb(142, 14, 31);
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    transition: background-color 0.5s ease, color 0.5s ease;
+    min-height: 100vh;
+    background-color: var(--base-color);
+    color: var(--text-color);
+    font-family: $font2;
+}
+
+a {
+    text-decoration: none;
+    color: --text-color;
+}
+
+.title {
+    width: 150px;
+    margin: 40px auto 30px auto;
+    text-align: center;
+    position: relative;
+    p {
+        font-size: 1.2rem;
+    }
+}

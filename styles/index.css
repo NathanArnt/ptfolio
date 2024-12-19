@@ -1,0 +1,207 @@
+@charset "UTF-8";
+:root {
+  --base-color: rgba(255, 255, 255, 0.645);
+  --text-color: #2a2a2a;
+  --texthover-color: #686868;
+  --bgskills-color: #ededed;
+}
+
+.darkmode {
+  --base-color: #323232;
+  --text-color: rgb(231, 231, 231);
+  --texthover-color: #ffffff;
+  --bgskills-color: #535353;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "CodeFont";
+  src: url(../assets/fonts/Code.otf);
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Code";
+  src: url(../assets/fonts/Code2.ttf);
+}
+#theme-switch i:last-child {
+  display: none;
+}
+
+.darkmode #theme-switch i:first-child {
+  display: none;
+}
+
+.darkmode #theme-switch i:last-child {
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+  min-height: 100vh;
+  background-color: var(--base-color);
+  color: var(--text-color);
+  font-family: Poppins, serif;
+}
+
+a {
+  text-decoration: none;
+  color: --text-color;
+}
+
+.title {
+  width: 150px;
+  margin: 40px auto 30px auto;
+  text-align: center;
+  position: relative;
+}
+.title p {
+  font-size: 1.2rem;
+}
+
+.homePage .homePageContainer {
+  max-width: 1000px;
+  margin: auto;
+}
+.homePage .homePageContainer .header {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+.homePage .homePageContainer .header .logo {
+  font-family: Code, serif;
+  color: var(--text-color);
+}
+.homePage .homePageContainer .header .logo span {
+  color: rgb(142, 14, 31);
+}
+.homePage .homePageContainer .header #theme-switch {
+  background: rgba(128, 128, 128, 0.33);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.homePage .homePageContainer .header #theme-switch i {
+  transition: 0.7s ease-in-out;
+}
+.homePage .homePageContainer .header #theme-switch i:hover {
+  transform: rotateZ(360deg);
+}
+.homePage .homePageContainer .about {
+  margin: 20px auto;
+  max-width: 800px;
+}
+.homePage .homePageContainer .about .aboutContainer .me {
+  font-size: 1.3rem;
+  text-align: center;
+}
+.homePage .homePageContainer .about .aboutContainer .me h2 {
+  text-align: center;
+  font-weight: 100;
+}
+.homePage .homePageContainer .about .aboutContainer .me .prenom {
+  margin: 10px 0 0 0;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.homePage .homePageContainer .about .aboutContainer .me .title {
+  margin: 10px auto 30px;
+}
+.homePage .homePageContainer .about .aboutContainer .me span {
+  color: rgb(142, 14, 31);
+}
+.homePage .homePageContainer .about .aboutContainer .info {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.homePage .homePageContainer .about .aboutContainer .info img {
+  margin-left: 70px;
+  width: 80%;
+  border-radius: 20px;
+}
+.homePage .homePageContainer .skills {
+  max-width: 1000px;
+  margin: auto;
+}
+.homePage .homePageContainer .skills .skillsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Limite à trois colonnes */
+  gap: 10px; /* Espace entre les cartes */
+  text-align: center;
+  font-size: 4rem;
+  color: rgb(142, 14, 31);
+}
+.homePage .homePageContainer .skills .skillsContainer .skillsElement:hover {
+  background-color: var(--bgskills-color);
+}
+.homePage .homePageContainer .skills .skillsContainer .skillsElement p {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+.homePage .homePageContainer .documents .documentsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 50px 0;
+}
+.homePage .homePageContainer .documents .documentsContainer button {
+  background: none;
+  border: 1.5px solid rgb(142, 14, 31);
+  border-radius: 10px;
+  height: 65px;
+  width: 180px;
+  color: #d4d4d4;
+  transition: 0.2s ease-in-out;
+}
+.homePage .homePageContainer .documents .documentsContainer button:hover {
+  cursor: pointer;
+  background-color: rgb(142, 14, 31);
+}
+.homePage .homePageContainer .documents .documentsContainer div {
+  padding: 0 30px;
+}
+
+.navBar {
+  position: fixed;
+  bottom: 0;
+  left: 25%;
+  min-width: 400px;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 30px auto;
+  background: linear-gradient(205deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.navBar .navBarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.5rem;
+}
+.navBar .navBarContainer a {
+  transition: 0.2s ease-out;
+  transform: scale(1);
+  color: var(--text-color);
+}
+.navBar .navBarContainer a:hover {
+  transform: scale(1.2);
+  color: var(--texthover-color);
+}/*# sourceMappingURL=index.css.map */
