@@ -17,14 +17,14 @@
                     <i class="fa-solid fa-moon"></i>
                     <i class="fa-solid fa-sun"></i>
                 </button>
-            </div>
-            <div class="navBar">
-                <div class="navBarContainer">
-                    <a href="#home"><i class="fa-solid fa-house"></i></a>
-                    <a href="#about"><i class="fa-solid fa-user"></i></a>
-                    <a href="#skills"><i class="fa-solid fa-book"></i></a>
-                    <a href="#experiences"><i class="fa-solid fa-briefcase"></i></a>
-                    <a href="#veille"><i class="fa-solid fa-pencil"></i></a>
+                <div class="navBar">
+                    <div class="navBarContainer">
+                        <a href="#home"><i class="fa-solid fa-house"></i></a>
+                        <a href="#about"><i class="fa-solid fa-user"></i></a>
+                        <a href="#skills"><i class="fa-solid fa-book"></i></a>
+                        <a href="#experiences"><i class="fa-solid fa-briefcase"></i></a>
+                        <a href="#veille"><i class="fa-solid fa-pencil"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="about">
@@ -50,10 +50,11 @@
                     <div class="info">
                         <div class="text">
                             <p>Je suis étudiant en BTS SIO en option SLAM au lycée Félix Le Dantec à Lannion.</p>
-                            <p>J'ai pris goût à l'informatique dès le plus jeune âge, à 10 ans j'avais déjà un clavier et une souris dans les mains.
+                            <p class="p-padding">J'ai pris goût à l'informatique dès le plus jeune âge, à 10 ans j'avais déjà un clavier et une souris dans les mains.
                                 <br>
                                 C'est alors tout naturellement que je me suis tourné vers l'informatique et le developpement pour mon parcours professionnel.
                             </p>
+                            <a class="btnContact" href="#footer">Contactez-moi</a>
                         </div>
                         <div class="img">
                             <img src="./assets/img/91c4565c774a9cacc7274bc273101cca.jpg" alt="img">
@@ -64,31 +65,88 @@
             <div class="skills" id="skills">
                 <div class="title">
                     <p>Compétences</p>
+                    <div class="divider"></div>
                 </div>
                 <div class="skillsContainer">
                     <div class="skillsElement">
                         <span><i class="fa-brands fa-react"></i></s>
-                        <p>React</p>
+                            <div class="text">
+                                <p>React</p>
+                                <p>40%</p>
+                            </div>
+                            <div class="skillbar">
+                                <div class="skillbarcolor" style="width: 40%;"></div>
+                            </div>
                     </div>
                     <div class="skillsElement">
                         <span><i class="fa-brands fa-symfony"></i></span>
-                        <p>Symfony</p>
+                        <div class="text">
+                            <p>Symfony</p>
+                            <p>70%</p>
+                        </div>
+                        <div class="skillbar">
+                            <div class="skillbarcolor" style="width: 70%;"></div>
+                        </div>
                     </div>
                     <div class="skillsElement">
                         <span><i class="fa-brands fa-php"></i></span>
-                        <p>php</p>
+                        <div class="text">
+                            <p>php</p>
+                            <p>70%</p>
+                        </div>
+                        <div class="skillbar">
+                            <div class="skillbarcolor" style="width: 70%;"></div>
+                        </div>
                     </div>
                     <div class="skillsElement">
                         <span><i class="fa-brands fa-html5"></i></span>
-                        <p>HTML 5</p>
+                        <div class="text">
+                            <p>HTML 5</p>
+                            <p>100%</p>
+                        </div>
+                        <div class="skillbar">
+                            <div class="skillbarcolor" style="width: 100%;"></div>
+                        </div>
                     </div>
                     <div class="skillsElement">
                         <span><i class="fa-brands fa-css3-alt"></i></p>
-                        <p>CSS 3</p>
+                            <div class="text">
+                                <p>CSS 3</p>
+                                <p>90%</p>
+                            </div>
+                            <div class="skillbar">
+                                <div class="skillbarcolor" style="width: 90%;"></div>
+                            </div>
                     </div>
                     <div class="skillsElement">
                         <span><i class="fa-brands fa-js"></i></span>
-                        <p>JavaScript</p>
+                        <div class="text">
+                            <p>JavaScript</p>
+                            <p>30%</p>
+                        </div>
+                        <div class="skillbar">
+                            <div class="skillbarcolor" style="width: 30%;"></div>
+                        </div>
+                    </div>
+                    <div class="skillsElement">
+                        <span><i class="fa-solid fa-database"></i></span>
+                        <div class="text">
+                            <p>mySQL</p>
+                            <p>70%</p>
+                        </div>
+                        <div class="skillbar">
+                            <div class="skillbarcolor" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skillsElement">
+                        <span><i class="fa-brands fa-vuejs"></i></p>
+                            <div class="text">
+                                <p>VueJS 3</p>
+                                <p>40%</p>
+                            </div>
+                            <div class="skillbar">
+                                <div class="skillbarcolor" style="width: 40%;"></div>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -96,6 +154,45 @@
                 <div class="projetsContainer" id="projets">
                     <div class="title">
                         <p>Projets</p>
+                        <div class="divider"></div>
+                    </div>
+                    <div class="cardContainer">
+                        <div class="card" style="background-image: url(/assets/img/enchere1.png);">
+                            <div class="cardBody">
+                                <div class="info">
+                                    <h3>Magasin Drive</h3>
+                                    <p>Drive avec un système de récupération de commande.</p>
+                                </div>
+                                <div class="list-tag">
+                                    <p><i class="fa-brands fa-symfony"></i>Symfony</p>
+                                    <p><i class="fa-brands fa-vuejs"></i>vueJS</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="background-image: url(/assets/img/enchere1.png);">
+                            <div class="cardBody">
+                                <div class="info">
+                                    <h3>Site d'enchère</h3>
+                                    <p>Site d'enchère avec gestion pour utilisateur et administrateur.</p>
+                                </div>
+                                <div class="list-tag">
+                                    <p><i class="fa-brands fa-symfony"></i>Symfony</p>
+                                    <p><i class="fa-brands fa-vuejs"></i>vueJS</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="cardBody">
+                                <div class="info">
+                                    <h3>Site d'enchère</h3>
+                                    <p>Site d'enchère avec gestion pour utilisateur et administrateur.</p>
+                                </div>
+                                <div class="list-tag">
+                                    <p><i class="fa-brands fa-symfony"></i>Symfony</p>
+                                    <p><i class="fa-brands fa-vuejs"></i>vueJS</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -103,6 +200,7 @@
                 <div class="experienceContainer" id="experiences">
                     <div class="title">
                         <p>Expériences</p>
+                        <div class="divider"></div>
                     </div>
                 </div>
             </div>
@@ -110,20 +208,29 @@
                 <div class="veilleContainer" id="veille">
                     <div class="title">
                         <p>Veille</p>
+                        <div class="divider"></div>
                     </div>
                 </div>
             </div>
             <div class="footer">
                 <div class="footerContainer" id="footer">
-                    <div class="infos">
-                        <div class="email">
-                            <p>narnault.ledantec@gmail.com</p>
-                        </div>
-                        <div class="telephone">
-                            <p>06.41.47.74.69</p>
+                    <div class="top">
+                        <a href="#home">Nathan ARNAULT</a>
+                        <div class="links">
+                            <a href="#about">A propos</a>
+                            <a href="#skills">Compétences</a>
+                            <a href="#projets">Projets</a>
+                            <a href="#experiences">Expériences</a>
+                            <a href="#veille">Veille</a>  
                         </div>
                     </div>
-                    <p>Copyright </p>
+                    <div class="bottom">
+                        <a href="mailto:narnault.ledantec@gmail.com" class="email"><i class="fa-solid fa-envelope"></i>narnault.ledantec@gmail.com</a>
+                        <p class="telephone"><i class="fa-solid fa-phone"></i>06.41.47.74.69</p>
+                    </div>
+                    <div class="copyright">
+                        <p>Tous droits réservés.</p>
+                    </div>
                 </div>
             </div>
         </div>

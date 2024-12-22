@@ -3,12 +3,14 @@
     --text-color: #2a2a2a;
     --texthover-color: #686868; 
     --bgskills-color: #ededed;
+    --hoverDocBtn-color: #ffffff; 
   }
   .darkmode{
     --base-color: #323232;
     --text-color: rgb(231, 231, 231);
     --texthover-color: #ffffff; 
     --bgskills-color: #535353;
+    --hoverDocBtn-color: #323232; 
   }
   * {
     padding: 0;
@@ -42,7 +44,7 @@ $font1: CodeFont,serif;
 $font2: Poppins,serif;
 $font3: Code,serif;
 
-$white: #d4d4d4;
+$white: #e0e0e0;
 $red: rgb(142, 14, 31);
 
 html {
@@ -62,11 +64,17 @@ a {
 }
 
 .title {
-    width: 150px;
     margin: 40px auto 30px auto;
     text-align: center;
     position: relative;
     p {
         font-size: 1.2rem;
+    }
+    .divider {
+        margin: 10px auto;
+        height: 4px;
+        width: 50px;
+        background: $red;
+        border-radius: 10px;
     }
 }

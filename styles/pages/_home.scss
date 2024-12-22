@@ -1,9 +1,9 @@
 .homePage {
     .homePageContainer {
-        max-width: 1000px;
-        margin: auto;
 
         .header {
+            max-width: 1000px;
+            margin: auto;
             padding: 30px 0;
             display: flex;
             justify-content: space-between;
@@ -62,7 +62,21 @@
                 .info {
                     display: grid;
                     grid-template-columns: 50% 50%;
-                    
+
+                    .text {
+                        .p-padding {
+                            padding: 0 0 50px 0;
+                        }
+                    }
+                     a {
+                        font-weight: bold;
+                        background-color: $red;
+                        border: 1px solid $red;
+                        padding: 15px 20px;
+                        border-radius: 10px;
+                        text-decoration: none;
+                        color: $white;
+                     }
                     img {
                         margin-left: 70px;
                         width: 80%;
@@ -81,16 +95,40 @@
                 grid-template-columns: repeat(3, 1fr); /* Limite à trois colonnes */
                 gap: 10px; /* Espace entre les cartes */
                 text-align: center;
-                font-size: 4rem;
-                color: $red;
+                font-size: 5rem;
+                color: var(--text-color);
 
                 .skillsElement {
+                    position: relative;
                     &:hover {
+                        border-radius: 10px;
                         background-color: var(--bgskills-color);
                     }
-                    p {
-                        font-size: 1rem;
-                        color: var(--text-color);
+                    .text {
+                        margin: 0 auto;
+                        width: 90%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        p {
+                            margin-bottom: 25px;
+                            font-size: 1rem;
+                            color: var(--text-color);
+                        }  
+                    }
+                    
+                    .skillbar {
+                        width: 90%;
+                        height: 10px;
+                        background-color: $white;
+                        border-radius: 10px;
+                        margin: 0 auto 10px;
+                        .skillbarcolor{
+                            height: 10px;
+                            border-radius: 10px;
+                            background-color: $red;
+                        }
                     }
                 } // skillsElement
             } // skillsContainer
@@ -107,9 +145,10 @@
                     border-radius: 10px;
                     height: 65px;
                     width: 180px;
-                    color: $white;
+                    color: var(--text-color);
                     transition: 0.2s ease-in-out;
                     &:hover {
+                        color: var(--hoverDocBtn-color);
                         cursor: pointer;
                         background-color: $red;
                     }
@@ -119,5 +158,71 @@
                 }
             } // documentsContainer
         } //documents
+        .projets {
+            max-width: 1000px;
+            margin: auto;
+            .projetsContainer {
+
+                .cardContainer {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                }
+                .card {
+                    
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 10px;
+                    position: relative;
+
+                    .cardBody {
+                        padding: 15px;
+                        &:hover {
+                            
+                        }
+                        .info {
+                            
+                            &:hover {
+                            align-items: center;
+                            background: linear-gradient(0deg, #06044a, #0006);
+                            border: 0;
+                            bottom: 0;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 20px;
+                            height: 100%;
+                            justify-content: center;
+                            position: absolute;
+                            right: 0;
+                            text-align: center;
+                            transform: translateY(100%);
+                            transition: .5s ease;
+                            width: 100%;
+                            }
+                        }
+                        .list-tag {
+                            position: absolute;
+                            bottom: -16px;
+                            right: 10px;
+                            display: flex;
+                            z-index: 1;
+
+                            p {
+                                background-color: $red;
+                                padding: 5px;
+                                margin: 2px;
+                                border-radius: 8px;
+
+                                i {
+                                    padding-right: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     } // homePageContainer
 } //homePage
