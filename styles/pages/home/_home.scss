@@ -39,9 +39,9 @@
         .about {
             margin: 20px auto;
             max-width: 1000px;
+            font-size: 1.3rem;
             .aboutContainer {
                 .me {
-                    font-size: 1.3rem;
                     text-align: center;
                     h2 {
                     text-align: center;
@@ -69,7 +69,7 @@
                         flex-wrap: wrap;
                         font-size: 1.2rem;
                         text-align: justify;
-                        margin:  10px;
+                        margin: 10px;
 
                      a {  
                         font-weight: bold;
@@ -93,6 +93,30 @@
                         border-radius: 10px;
                     } // img
                 } // info
+                .bts {
+                    text-align: justify;
+                    .description {
+                        
+                        h3 {
+                            padding-bottom: 10px;
+                        }
+                        p {
+                            padding: 20px 0;
+                    
+                        }
+                    }
+                    .options {
+                        display: grid;
+                        grid-template-columns: 50% 50%;
+                        font-size: 1rem;
+                        .slam {
+                            padding: 0 0 0 10px;
+                        }
+                        .sisr {
+                            padding: 0 10px 0 0;
+                        }
+                    }
+                }
             } // aboutContainer
         } // about
 
@@ -150,11 +174,16 @@
                 justify-content: center;
                 margin: 0 0 50px 0;
                 a {
+                    display: flex; /* Active Flexbox */
+                    flex-direction: column;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
                     text-decoration: none;
                     color: var(--text-color);
                     background: none;
                     border: 2px solid $red;
-                    padding: 15px 25px;
+                    height: 100px;
+                    width: 320px;
                     border-radius: 10px;
                     transition: 0.2s ease-in-out;
                     text-align: center;

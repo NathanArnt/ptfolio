@@ -67,7 +67,7 @@ a {
   font-weight: bold;
   background-color: transparent;
   border: 2px solid #e0e0e0;
-  padding: 15px 20px;
+  padding: 10px 20px;
   border-radius: 10px;
   text-decoration: none;
   color: #e0e0e0;
@@ -87,6 +87,14 @@ a {
   font-size: 1.2rem;
 }
 .title .divider {
+  margin: 10px auto;
+  height: 4px;
+  width: 50px;
+  background: rgb(142, 14, 31);
+  border-radius: 20px;
+}
+
+.divider {
   margin: 10px auto;
   height: 4px;
   width: 50px;
@@ -129,9 +137,9 @@ a {
 .homePage .homePageContainer .about {
   margin: 20px auto;
   max-width: 1000px;
+  font-size: 1.3rem;
 }
 .homePage .homePageContainer .about .aboutContainer .me {
-  font-size: 1.3rem;
   text-align: center;
 }
 .homePage .homePageContainer .about .aboutContainer .me h2 {
@@ -180,6 +188,26 @@ a {
   margin: 10px;
   width: 80%;
   border-radius: 10px;
+}
+.homePage .homePageContainer .about .aboutContainer .bts {
+  text-align: justify;
+}
+.homePage .homePageContainer .about .aboutContainer .bts .description h3 {
+  padding-bottom: 10px;
+}
+.homePage .homePageContainer .about .aboutContainer .bts .description p {
+  padding: 20px 0;
+}
+.homePage .homePageContainer .about .aboutContainer .bts .options {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  font-size: 1rem;
+}
+.homePage .homePageContainer .about .aboutContainer .bts .options .slam {
+  padding: 0 0 0 10px;
+}
+.homePage .homePageContainer .about .aboutContainer .bts .options .sisr {
+  padding: 0 10px 0 0;
 }
 .homePage .homePageContainer .skills {
   max-width: 1000px;
@@ -231,11 +259,16 @@ a {
   margin: 0 0 50px 0;
 }
 .homePage .homePageContainer .documents .documentsContainer a {
+  display: flex; /* Active Flexbox */
+  flex-direction: column;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
   text-decoration: none;
   color: var(--text-color);
   background: none;
   border: 2px solid rgb(142, 14, 31);
-  padding: 15px 25px;
+  height: 100px;
+  width: 320px;
   border-radius: 10px;
   transition: 0.2s ease-in-out;
   text-align: center;
@@ -423,5 +456,42 @@ a {
 .footer .footerContainer .copyright {
   padding: 30px 0 40px;
   max-width: 70%;
+  margin: 0 auto;
+}
+
+.homePageEnchere .homePageEnchereContainer .header {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+.homePageEnchere .homePageEnchereContainer .header .logo {
+  font-family: Code, serif;
+  color: var(--text-color);
+}
+.homePageEnchere .homePageEnchereContainer .header .logo span {
+  color: rgb(142, 14, 31);
+}
+.homePageEnchere .homePageEnchereContainer .header #theme-switch {
+  background: rgba(128, 128, 128, 0.33);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.homePageEnchere .homePageEnchereContainer .header #theme-switch i {
+  transition: 0.7s ease-in-out;
+}
+.homePageEnchere .homePageEnchereContainer .header #theme-switch i:hover {
+  transform: rotateZ(360deg);
+}
+.homePageEnchere .homePageEnchereContainer .main .mainContainer {
+  max-width: 1000px;
   margin: 0 auto;
 }/*# sourceMappingURL=index.css.map */

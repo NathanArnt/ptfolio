@@ -1,0 +1,45 @@
+.homePageEnchere {
+    .homePageEnchereContainer {
+        
+        .header {
+            max-width: 1000px;
+            margin: auto;
+            padding: 30px 0;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.5rem;
+
+            .logo {
+                font-family: $font3;
+                color: var(--text-color);
+                span {
+                    color: $red;
+                }
+            }
+            #theme-switch {
+                background: rgba(128, 128, 128, 0.33);
+                border-radius: 50%;
+                height: 50px;
+                width: 50px;
+                padding: 0;
+                border: none;
+                color: white;
+                
+                font-size: 1.8rem;
+                cursor: pointer;
+                i {
+                    transition: 0.7s ease-in-out;
+                    &:hover {
+                        transform: rotateZ(360deg);
+                    }
+                }
+            }
+        }
+        .main {
+            .mainContainer {
+                max-width: 1000px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
