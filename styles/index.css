@@ -128,7 +128,7 @@ a {
 }
 .homePage .homePageContainer .about {
   margin: 20px auto;
-  max-width: 800px;
+  max-width: 1000px;
 }
 .homePage .homePageContainer .about .aboutContainer .me {
   font-size: 1.3rem;
@@ -153,22 +153,33 @@ a {
   display: grid;
   grid-template-columns: 50% 50%;
 }
-.homePage .homePageContainer .about .aboutContainer .info .text .p-padding {
-  padding: 0 0 50px 0;
+.homePage .homePageContainer .about .aboutContainer .info .text {
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+  text-align: justify;
+  margin: 10px;
 }
-.homePage .homePageContainer .about .aboutContainer .info a {
+.homePage .homePageContainer .about .aboutContainer .info .text a {
   font-weight: bold;
   background-color: rgb(142, 14, 31);
-  border: 1px solid rgb(142, 14, 31);
+  border: 2px solid rgb(142, 14, 31);
   padding: 15px 20px;
+  margin-bottom: 6px;
   border-radius: 10px;
   text-decoration: none;
   color: #e0e0e0;
+  transition: 0.3s ease-in-out;
+}
+.homePage .homePageContainer .about .aboutContainer .info .text a:hover {
+  background: none;
+  transform: scale(1.1);
 }
 .homePage .homePageContainer .about .aboutContainer .info img {
-  margin-left: 70px;
+  margin: 10px;
   width: 80%;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .homePage .homePageContainer .skills {
   max-width: 1000px;
@@ -219,16 +230,17 @@ a {
   justify-content: center;
   margin: 0 0 50px 0;
 }
-.homePage .homePageContainer .documents .documentsContainer button {
-  background: none;
-  border: 1.5px solid rgb(142, 14, 31);
-  border-radius: 10px;
-  height: 65px;
-  width: 180px;
+.homePage .homePageContainer .documents .documentsContainer a {
+  text-decoration: none;
   color: var(--text-color);
+  background: none;
+  border: 2px solid rgb(142, 14, 31);
+  padding: 15px 25px;
+  border-radius: 10px;
   transition: 0.2s ease-in-out;
+  text-align: center;
 }
-.homePage .homePageContainer .documents .documentsContainer button:hover {
+.homePage .homePageContainer .documents .documentsContainer a:hover {
   color: var(--hoverDocBtn-color);
   cursor: pointer;
   background-color: rgb(142, 14, 31);
@@ -271,7 +283,7 @@ a {
   right: 0;
   text-align: center;
   transform: translateY(100%);
-  transition: transform 0.5s ease;
+  transition: transform 0.5s ease-in-out;
   width: 100%;
   color: #e0e0e0;
 }

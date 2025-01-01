@@ -38,7 +38,7 @@
 
         .about {
             margin: 20px auto;
-            max-width: 800px;
+            max-width: 1000px;
             .aboutContainer {
                 .me {
                     font-size: 1.3rem;
@@ -64,23 +64,33 @@
                     grid-template-columns: 50% 50%;
 
                     .text {
-                        .p-padding {
-                            padding: 0 0 50px 0;
-                        }
-                    }
-                     a {
+                        display: flex;
+                        align-content: space-between;
+                        flex-wrap: wrap;
+                        font-size: 1.2rem;
+                        text-align: justify;
+                        margin:  10px;
+
+                     a {  
                         font-weight: bold;
                         background-color: $red;
-                        border: 1px solid $red;
+                        border: 2px solid $red;
                         padding: 15px 20px;
+                        margin-bottom: 6px;
                         border-radius: 10px;
                         text-decoration: none;
                         color: $white;
+                        transition: 0.3s ease-in-out;
+                        &:hover {
+                            background: none;
+                            transform: scale(1.1);
+                        }
                      }
+                    }
                     img {
-                        margin-left: 70px;
+                        margin:  10px;
                         width: 80%;
-                        border-radius: 20px;
+                        border-radius: 10px;
                     } // img
                 } // info
             } // aboutContainer
@@ -139,14 +149,15 @@
                 align-items: center;
                 justify-content: center;
                 margin: 0 0 50px 0;
-                button {
-                    background: none;
-                    border: 1.5px solid $red;
-                    border-radius: 10px;
-                    height: 65px;
-                    width: 180px;
+                a {
+                    text-decoration: none;
                     color: var(--text-color);
+                    background: none;
+                    border: 2px solid $red;
+                    padding: 15px 25px;
+                    border-radius: 10px;
                     transition: 0.2s ease-in-out;
+                    text-align: center;
                     &:hover {
                         color: var(--hoverDocBtn-color);
                         cursor: pointer;
@@ -194,7 +205,7 @@
                         right: 0;
                         text-align: center;
                         transform: translateY(100%); // Par défaut, masqué
-                        transition: transform 0.5s ease; // Animation fluide
+                        transition: transform 0.5s ease-in-out; // Animation fluide
                         width: 100%;
                         color: $white;
                     }
