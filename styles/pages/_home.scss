@@ -168,7 +168,6 @@
                     grid-template-columns: repeat(3, 1fr);
                 }
                 .card {
-                    
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: cover;
@@ -176,50 +175,60 @@
                     height: 300px;
                     border-radius: 10px;
                     position: relative;
+                    display: flex;
+                    padding: 15px;
+                    overflow: hidden;
+                
+                    .info {
+                        box-shadow: 0 0 1rem #0003;
+                        align-items: center;
+                        background: linear-gradient(0deg, #0006, $red);
+                        border: 0;
+                        bottom: 0;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        height: 100%;
+                        justify-content: center;
+                        position: absolute;
+                        right: 0;
+                        text-align: center;
+                        transform: translateY(100%); // Par défaut, masqué
+                        transition: transform 0.5s ease; // Animation fluide
+                        width: 100%;
+                        color: $white;
+                    }
+                
+                    &:hover .info {
+                        transform: translateY(0); // Fait apparaître .info sur hover
+                    }
+                
+                
+                    .list-tag {
+                        align-items: center;
+                        bottom: 0;
+                        display: flex;
+                        gap: 5px;
+                        height: auto;
+                        justify-content: end;
+                        overflow: hidden;
+                        padding: 10px;
+                        position: absolute;
+                        right: 0;
+                        white-space: nowrap;
+                        z-index: 99;
+                        
 
-                    .cardBody {
-                        padding: 15px;
-                        &:hover {
-                            
-                        }
-                        .info {
-                            
-                            &:hover {
-                            align-items: center;
-                            background: linear-gradient(0deg, #06044a, #0006);
-                            border: 0;
-                            bottom: 0;
-                            display: flex;
-                            flex-direction: column;
-                            gap: 20px;
-                            height: 100%;
-                            justify-content: center;
-                            position: absolute;
-                            right: 0;
-                            text-align: center;
-                            transform: translateY(100%);
-                            transition: .5s ease;
-                            width: 100%;
+                        p {
+                            background-color: $red;
+                            padding: 5px;
+                            margin: 2px;
+                            border-radius: 8px;
+                            color: $white;
+                            i {
+                                padding-right: 5px;
                             }
-                        }
-                        .list-tag {
-                            position: absolute;
-                            bottom: -16px;
-                            right: 10px;
-                            display: flex;
-                            z-index: 1;
-
-                            p {
-                                background-color: $red;
-                                padding: 5px;
-                                margin: 2px;
-                                border-radius: 8px;
-
-                                i {
-                                    padding-right: 5px;
-                                }
-                            }
-                        }
+                        }        
                     }
                 }
             }

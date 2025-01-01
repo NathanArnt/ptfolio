@@ -62,6 +62,22 @@ a {
   color: --text-color;
 }
 
+.btnAll {
+  cursor: pointer;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid #e0e0e0;
+  padding: 15px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #e0e0e0;
+  transition: 0.3s ease;
+}
+.btnAll:hover {
+  background: #e0e0e0;
+  color: rgb(142, 14, 31);
+}
+
 .title {
   margin: 40px auto 30px auto;
   text-align: center;
@@ -75,7 +91,7 @@ a {
   height: 4px;
   width: 50px;
   background: rgb(142, 14, 31);
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .homePage .homePageContainer .header {
@@ -236,13 +252,14 @@ a {
   height: 300px;
   border-radius: 10px;
   position: relative;
-}
-.homePage .homePageContainer .projets .projetsContainer .card .cardBody {
+  display: flex;
   padding: 15px;
+  overflow: hidden;
 }
-.homePage .homePageContainer .projets .projetsContainer .card .cardBody .info:hover {
+.homePage .homePageContainer .projets .projetsContainer .card .info {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
   align-items: center;
-  background: linear-gradient(0deg, #06044a, rgba(0, 0, 0, 0.4));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgb(142, 14, 31));
   border: 0;
   bottom: 0;
   display: flex;
@@ -254,28 +271,40 @@ a {
   right: 0;
   text-align: center;
   transform: translateY(100%);
-  transition: 0.5s ease;
+  transition: transform 0.5s ease;
   width: 100%;
+  color: #e0e0e0;
 }
-.homePage .homePageContainer .projets .projetsContainer .card .cardBody .list-tag {
-  position: absolute;
-  bottom: -16px;
-  right: 10px;
+.homePage .homePageContainer .projets .projetsContainer .card:hover .info {
+  transform: translateY(0);
+}
+.homePage .homePageContainer .projets .projetsContainer .card .list-tag {
+  align-items: center;
+  bottom: 0;
   display: flex;
-  z-index: 1;
+  gap: 5px;
+  height: auto;
+  justify-content: end;
+  overflow: hidden;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  white-space: nowrap;
+  z-index: 99;
 }
-.homePage .homePageContainer .projets .projetsContainer .card .cardBody .list-tag p {
+.homePage .homePageContainer .projets .projetsContainer .card .list-tag p {
   background-color: rgb(142, 14, 31);
   padding: 5px;
   margin: 2px;
   border-radius: 8px;
+  color: #e0e0e0;
 }
-.homePage .homePageContainer .projets .projetsContainer .card .cardBody .list-tag p i {
+.homePage .homePageContainer .projets .projetsContainer .card .list-tag p i {
   padding-right: 5px;
 }
 
 .navBar {
-  z-index: 1;
+  z-index: 10;
   position: fixed;
   bottom: 0;
   left: 0;

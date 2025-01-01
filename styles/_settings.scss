@@ -62,7 +62,21 @@ a {
     text-decoration: none;
     color: --text-color;
 }
-
+.btnAll {
+    cursor: pointer;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid $white; 
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: $white;
+    transition: 0.3s ease;
+    &:hover {
+        background: $white;
+        color: $red;
+    }
+}
 .title {
     margin: 40px auto 30px auto;
     text-align: center;
@@ -75,6 +89,6 @@ a {
         height: 4px;
         width: 50px;
         background: $red;
-        border-radius: 10px;
+        border-radius: 20px;
     }
 }
