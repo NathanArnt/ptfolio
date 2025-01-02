@@ -1,9 +1,11 @@
 .footer {
+    min-height: 150px;
+    background-color: $red;
+    border-radius: 50px 50px 0 0;
+    color: $white;
     .footerContainer { 
-        min-height: 150px;
-        background-color: $red;
-        border-radius: 50px 50px 0 0;
-        color: $white;
+        max-width: 90%;
+        margin: 0 auto;
         
         i {
             padding-right: 8px;
@@ -40,7 +42,7 @@
                             width: 0%;
                             height: 2px;
                             background-color: var(--text-color);
-                            border-radius: 10px;
+                            border-radius: 20px;
                             bottom: -5px;
                             left: 0;
                             transition: 0.3s ease-in-out;
@@ -56,7 +58,21 @@
                 margin: 0 auto;
                 display: flex;
                 align-items: center;
-                
+                p {
+                    margin-right: 150px;
+                }
+                #linked {
+                    border: none;
+                    padding: 0;
+                    margin: 0;
+                    transition: 0.3s ease;
+                    font-size: 1.4rem;
+                    &:hover {
+                        background: none;
+                        color: $white;
+                        transform: scale(1.2);
+                    }
+                }
                 a {
                     position: relative;
                     margin-right: 150px;
@@ -66,10 +82,10 @@
                     &::after {
                         position: absolute;
                         content: '';
-                        width: 0%;
+                        width: 0%; 
                         height: 2px;
                         background-color: var(--text-color);
-                        border-radius: 10px;
+                        border-radius: 20px;
                         bottom: -5px;
                         left: 0;
                         transition: 0.3s ease-in-out;

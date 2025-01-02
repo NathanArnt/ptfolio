@@ -2,7 +2,7 @@
     .homePageContainer {
 
         .header {
-            max-width: 1000px;
+            max-width: 1600px;
             margin: auto;
             padding: 30px 0;
             display: flex;
@@ -108,9 +108,24 @@
                     .options {
                         display: grid;
                         grid-template-columns: 50% 50%;
-                        font-size: 1rem;
+                        #slash {
+                            color: $red;
+                        }
+                        .dividerdesc {
+                            margin: 10px 0;
+                            height: 3px;
+                            width: 50px;
+                            background: $red;
+                            border-radius: 20px;
+                        }
                         .slam {
                             padding: 0 0 0 10px;
+
+                            &::after {
+                                content: "";
+                                background: $red;
+
+                            }
                         }
                         .sisr {
                             padding: 0 10px 0 0;
@@ -176,8 +191,8 @@
                 a {
                     display: flex; /* Active Flexbox */
                     flex-direction: column;
-    justify-content: center; /* Centre horizontalement */
-    align-items: center; /* Centre verticalement */
+                    justify-content: center; /* Centre horizontalement */
+                    align-items: center; /* Centre verticalement */
                     text-decoration: none;
                     color: var(--text-color);
                     background: none;
@@ -185,16 +200,26 @@
                     height: 100px;
                     width: 320px;
                     border-radius: 10px;
-                    transition: 0.2s ease-in-out;
+                    transition: 0.3s ease;
                     text-align: center;
                     &:hover {
                         color: var(--hoverDocBtn-color);
                         cursor: pointer;
                         background-color: $red;
+                        transform: scale(1.05);
                     }
                 }
-                div {
-                    padding: 0 30px;
+                #linked {
+                    border: none;
+                    padding: 0;
+                    margin: 0;
+                    transition: 0.3s ease;
+                    font-size: 2rem;
+                    &:hover {
+                        background: none;
+                        color: $white;
+                        transform: scale(1.2);
+                    }
                 }
             } // documentsContainer
         } //documents
