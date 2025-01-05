@@ -103,7 +103,7 @@ a {
 }
 
 .homePage .homePageContainer .header {
-  max-width: 1600px;
+  max-width: 80%;
   margin: auto;
   padding: 30px 0;
   display: flex;
@@ -372,7 +372,7 @@ a {
 }
 
 .navBar {
-  z-index: 10;
+  z-index: 100;
   position: fixed;
   bottom: 0;
   left: 0;
