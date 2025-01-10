@@ -2,7 +2,7 @@
     .homePageEnchereContainer {
         
         .header {
-            max-width: 1000px;
+            max-width: 80%;
             margin: auto;
             padding: 30px 0;
             display: flex;
@@ -36,9 +36,24 @@
             }
         }
         .main {
+            max-width: 1200px;
+            margin: 0 auto;
             .mainContainer {
-                max-width: 1000px;
-                margin: 0 auto;
+                
+                .top {
+                    display: grid;
+                    grid-template-columns: 60% 40%;
+                    .img-enchere {
+                        img {
+                            width: 100%;
+                        }
+                        margin-right: 20px;
+                    }
+                    .text {
+                        margin-left: 20px;
+                        text-align: justify;
+                    }
+                }
             }
         }
     }
