@@ -136,7 +136,7 @@ a {
 }
 .homePage .homePageContainer .about {
   margin: 20px auto;
-  max-width: 1200px;
+  max-width: 65%;
   font-size: 1.3rem;
 }
 .homePage .homePageContainer .about .aboutContainer .me {
@@ -223,7 +223,7 @@ a {
   padding: 0 10px 0 0;
 }
 .homePage .homePageContainer .skills {
-  max-width: 1200px;
+  max-width: 65%;
   margin: auto;
 }
 .homePage .homePageContainer .skills .skillsContainer {
@@ -305,7 +305,7 @@ a {
   transform: scale(1.2);
 }
 .homePage .homePageContainer .projets {
-  max-width: 1200px;
+  max-width: 65%;
   margin: auto;
 }
 .homePage .homePageContainer .projets .projetsContainer .cardContainer {
@@ -370,6 +370,13 @@ a {
 }
 .homePage .homePageContainer .projets .projetsContainer .card .list-tag p i {
   padding-right: 5px;
+}
+.homePage .homePageContainer .parcours {
+  max-width: 65%;
+  margin: 0 auto;
+}
+.homePage .homePageContainer .parcours .parcoursContainer {
+  text-align: justify;
 }
 
 .navBar {
@@ -538,17 +545,33 @@ a {
   max-width: 1200px;
   margin: 0 auto;
 }
-.homePageEnchere .homePageEnchereContainer .main .mainContainer .top {
+.homePageEnchere .homePageEnchereContainer .main .mainContainer .top, .homePageEnchere .homePageEnchereContainer .main .mainContainer .bottom {
   display: grid;
   grid-template-columns: 60% 40%;
 }
-.homePageEnchere .homePageEnchereContainer .main .mainContainer .top .img-enchere {
+.homePageEnchere .homePageEnchereContainer .main .mainContainer .top .img-enchere, .homePageEnchere .homePageEnchereContainer .main .mainContainer .bottom .img-enchere {
   margin-right: 20px;
 }
-.homePageEnchere .homePageEnchereContainer .main .mainContainer .top .img-enchere img {
+.homePageEnchere .homePageEnchereContainer .main .mainContainer .top .img-enchere img, .homePageEnchere .homePageEnchereContainer .main .mainContainer .bottom .img-enchere img {
   width: 100%;
+  border-radius: 20px;
 }
-.homePageEnchere .homePageEnchereContainer .main .mainContainer .top .text {
+.homePageEnchere .homePageEnchereContainer .main .mainContainer .top .text, .homePageEnchere .homePageEnchereContainer .main .mainContainer .bottom .text {
   margin-left: 20px;
+  text-align: justify;
+}
+.homePageEnchere .homePageEnchereContainer .main .mainContainer .bottom {
+  grid-template-columns: 40% 60%;
+  margin-top: 40px;
+}
+.homePageEnchere .homePageEnchereContainer .main .mainContainer .bottom .img-enchere {
+  margin-left: 20px;
+}
+.homePageEnchere .homePageEnchereContainer .main .mainContainer .bottom .img-enchere img {
+  width: 100%;
+  border-radius: 20px;
+}
+.homePageEnchere .homePageEnchereContainer .main .mainContainer .bottom .text {
+  margin-right: 20px;
   text-align: justify;
 }/*# sourceMappingURL=index.css.map */

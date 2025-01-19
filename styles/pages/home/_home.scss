@@ -38,7 +38,7 @@
 
         .about {
             margin: 20px auto;
-            max-width: 1200px;
+            max-width: 65%;
             font-size: 1.3rem;
             .aboutContainer {
                 .me {
@@ -136,7 +136,7 @@
         } // about
 
         .skills {
-            max-width: 1200px;
+            max-width: 65%;
             margin: auto;
 
             .skillsContainer {
@@ -224,7 +224,7 @@
             } // documentsContainer
         } //documents
         .projets {
-            max-width: 1200px;
+            max-width: 65%;
             margin: auto;
             .projetsContainer {
 
@@ -297,6 +297,13 @@
                         }        
                     }
                 }
+            }
+        }
+        .parcours {
+            max-width: 65%;
+            margin: 0 auto;
+            .parcoursContainer {
+                text-align: justify;
             }
         }
     } // homePageContainer
