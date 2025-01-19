@@ -574,4 +574,15 @@ a {
 .homePageEnchere .homePageEnchereContainer .main .mainContainer .bottom .text {
   margin-right: 20px;
   text-align: justify;
+}
+.homePageEnchere .homePageEnchereContainer .main .mainContainer img {
+  width: 100%;
+  border-radius: 20px;
+}
+.homePageEnchere .homePageEnchereContainer .main .mainContainer .center .img-mid img {
+  width: 100%;
+  border-radius: 20px;
+}
+.homePageEnchere .homePageEnchereContainer .main .mainContainer .end {
+  margin: 40px 0;
 }/*# sourceMappingURL=index.css.map */
