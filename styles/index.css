@@ -110,6 +110,9 @@ a {
   margin: 40px auto;
 }
 
+.homePage .homePageContainer {
+  text-align: justify;
+}
 .homePage .homePageContainer .header {
   max-width: 80%;
   margin: auto;
@@ -522,6 +525,12 @@ a {
   align-items: center;
   padding: 30px 0 30px 0;
 }
+@media screen and (max-width: 950px) {
+  .footer .footerContainer .top {
+    font-size: 0.5rem;
+    display: block;
+  }
+}
 .footer .footerContainer .top a {
   font-size: 1.5rem;
   padding-right: 200px;
@@ -532,6 +541,12 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 950px) {
+  .footer .footerContainer .top .links {
+    font-size: 0.5rem;
+    display: block;
+  }
 }
 .footer .footerContainer .top .links a {
   font-size: 1rem;
@@ -561,8 +576,16 @@ a {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 950px) {
+  .footer .footerContainer .bottom {
+    display: block;
+  }
+}
 .footer .footerContainer .bottom p {
   margin-right: 150px;
+}
+.footer .footerContainer .bottom #github {
+  font-size: 1.4rem;
 }
 .footer .footerContainer .bottom .linked {
   padding: 0;
@@ -605,6 +628,9 @@ a {
   margin: 0 auto;
 }
 
+.homePageEnchere .homePageEnchereContainer {
+  text-align: justify;
+}
 .homePageEnchere .homePageEnchereContainer .header {
   max-width: 80%;
   margin: auto;
@@ -683,6 +709,9 @@ a {
   border-radius: 20px;
 }
 
+.homePageStage .homePageStageContainer {
+  text-align: justify;
+}
 .homePageStage .homePageStageContainer .header {
   max-width: 80%;
   margin: auto;
@@ -761,6 +790,9 @@ a {
   border-radius: 20px;
 }
 
+.homePageDrive .homePageDriveContainer {
+  text-align: justify;
+}
 .homePageDrive .homePageDriveContainer .header {
   max-width: 80%;
   margin: auto;
@@ -803,6 +835,11 @@ a {
 .homePageDrive .homePageDriveContainer .main .mainContainer .top, .homePageDrive .homePageDriveContainer .main .mainContainer .bottom {
   display: grid;
   grid-template-columns: 60% 40%;
+}
+@media screen and (max-width: 1300px) {
+  .homePageDrive .homePageDriveContainer .main .mainContainer .top, .homePageDrive .homePageDriveContainer .main .mainContainer .bottom {
+    display: block;
+  }
 }
 .homePageDrive .homePageDriveContainer .main .mainContainer .top .img-drive, .homePageDrive .homePageDriveContainer .main .mainContainer .bottom .img-drive {
   margin-right: 20px;

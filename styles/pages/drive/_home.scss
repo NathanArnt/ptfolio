@@ -1,6 +1,6 @@
 .homePageDrive {
     .homePageDriveContainer {
-        
+        text-align: justify;
         .header {
             max-width: 80%;
             margin: auto;
@@ -40,11 +40,16 @@
             margin: 0 auto;
             .mainContainer {
                 .resume {
-                    margin: 40px;
+                    margin: 40px; 
                 }
                 .top, .bottom{
+                    @media screen and (max-width: 1300px) {
+                        
+                        display: block;
+                    }
                     display: grid;
                     grid-template-columns: 60% 40%;
+
                     .img-drive {
                         img {
                             width: 100%;
