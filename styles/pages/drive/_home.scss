@@ -45,7 +45,7 @@
                 .top, .bottom{
                     display: grid;
                     grid-template-columns: 60% 40%;
-                    .img-enchere {
+                    .img-drive {
                         img {
                             width: 100%;
                             border-radius: 20px;
@@ -60,7 +60,7 @@
                 .bottom {
                     grid-template-columns: 40% 60%;
                     margin-top: 40px;
-                    .img-enchere {
+                    .img-drive {
                         img {
                             width: 100%;
                             border-radius: 20px;

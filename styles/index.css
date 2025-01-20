@@ -804,10 +804,10 @@ a {
   display: grid;
   grid-template-columns: 60% 40%;
 }
-.homePageDrive .homePageDriveContainer .main .mainContainer .top .img-enchere, .homePageDrive .homePageDriveContainer .main .mainContainer .bottom .img-enchere {
+.homePageDrive .homePageDriveContainer .main .mainContainer .top .img-drive, .homePageDrive .homePageDriveContainer .main .mainContainer .bottom .img-drive {
   margin-right: 20px;
 }
-.homePageDrive .homePageDriveContainer .main .mainContainer .top .img-enchere img, .homePageDrive .homePageDriveContainer .main .mainContainer .bottom .img-enchere img {
+.homePageDrive .homePageDriveContainer .main .mainContainer .top .img-drive img, .homePageDrive .homePageDriveContainer .main .mainContainer .bottom .img-drive img {
   width: 100%;
   border-radius: 20px;
 }
@@ -819,10 +819,10 @@ a {
   grid-template-columns: 40% 60%;
   margin-top: 40px;
 }
-.homePageDrive .homePageDriveContainer .main .mainContainer .bottom .img-enchere {
+.homePageDrive .homePageDriveContainer .main .mainContainer .bottom .img-drive {
   margin-left: 20px;
 }
-.homePageDrive .homePageDriveContainer .main .mainContainer .bottom .img-enchere img {
+.homePageDrive .homePageDriveContainer .main .mainContainer .bottom .img-drive img {
   width: 100%;
   border-radius: 20px;
 }
