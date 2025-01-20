@@ -18,3 +18,7 @@ themeSwitch.addEventListener("click", () => {
   darkmode !== "active" ? enableDarkmode() : disableDarkmode()
 })
 
+
+function openPdf() {
+  window.open('./assets/TableauSynthese-Nathan.pdf', '_blank');
+}
