@@ -102,6 +102,14 @@ a {
   border-radius: 20px;
 }
 
+.point {
+  background-color: rgb(142, 14, 31);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 40px auto;
+}
+
 .homePage .homePageContainer .header {
   max-width: 80%;
   margin: auto;
@@ -137,7 +145,7 @@ a {
 .homePage .homePageContainer .about {
   margin: 20px auto;
   max-width: 65%;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 .homePage .homePageContainer .about .aboutContainer .me {
   text-align: center;
@@ -167,7 +175,7 @@ a {
   flex-wrap: wrap;
   font-size: 1.2rem;
   text-align: justify;
-  margin: 10px;
+  padding-right: 20px;
 }
 .homePage .homePageContainer .about .aboutContainer .info .text a {
   font-weight: bold;
@@ -185,8 +193,7 @@ a {
   transform: scale(1.1);
 }
 .homePage .homePageContainer .about .aboutContainer .info img {
-  margin: 10px;
-  width: 80%;
+  max-width: 100%;
   border-radius: 10px;
 }
 .homePage .homePageContainer .about .aboutContainer .bts {
@@ -194,6 +201,7 @@ a {
 }
 .homePage .homePageContainer .about .aboutContainer .bts .description h3 {
   padding-bottom: 10px;
+  font-size: 1.5rem;
 }
 .homePage .homePageContainer .about .aboutContainer .bts .description p {
   padding: 20px 0;
@@ -306,25 +314,26 @@ a {
 }
 .homePage .homePageContainer .projets {
   max-width: 65%;
-  margin: auto;
+  margin: 0 auto;
 }
 .homePage .homePageContainer .projets .projetsContainer .cardContainer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.homePage .homePageContainer .projets .projetsContainer .card {
+.homePage .homePageContainer .projets .projetsContainer .cardContainer .card {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 350px;
+  width: 80%;
   height: 350px;
   border-radius: 10px;
   position: relative;
   display: flex;
-  padding: 15px;
   overflow: hidden;
+  margin: 0 10px;
 }
-.homePage .homePageContainer .projets .projetsContainer .card .info {
+.homePage .homePageContainer .projets .projetsContainer .cardContainer .card .info {
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
   align-items: center;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgb(142, 14, 31));
@@ -344,10 +353,10 @@ a {
   width: 100%;
   color: #e0e0e0;
 }
-.homePage .homePageContainer .projets .projetsContainer .card:hover .info {
+.homePage .homePageContainer .projets .projetsContainer .cardContainer .card:hover .info {
   transform: translateY(0);
 }
-.homePage .homePageContainer .projets .projetsContainer .card .list-tag {
+.homePage .homePageContainer .projets .projetsContainer .cardContainer .card .list-tag {
   align-items: center;
   bottom: 0;
   display: flex;
@@ -361,22 +370,106 @@ a {
   white-space: nowrap;
   z-index: 99;
 }
-.homePage .homePageContainer .projets .projetsContainer .card .list-tag p {
+.homePage .homePageContainer .projets .projetsContainer .cardContainer .card .list-tag p {
   background-color: rgb(142, 14, 31);
   padding: 5px;
   margin: 2px;
   border-radius: 8px;
   color: #e0e0e0;
 }
-.homePage .homePageContainer .projets .projetsContainer .card .list-tag p i {
+.homePage .homePageContainer .projets .projetsContainer .cardContainer .card .list-tag p i {
   padding-right: 5px;
 }
 .homePage .homePageContainer .parcours {
   max-width: 65%;
   margin: 0 auto;
 }
-.homePage .homePageContainer .parcours .parcoursContainer {
+.homePage .homePageContainer .parcours .parcoursContainer .text .semaines {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.homePage .homePageContainer .parcours .parcoursContainer .text .premiere, .homePage .homePageContainer .parcours .parcoursContainer .text .deuxieme {
+  margin: 20px 0;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 20px;
+}
+.homePage .homePageContainer .parcours .parcoursContainer .text .premiere .card, .homePage .homePageContainer .parcours .parcoursContainer .text .deuxieme .card {
   text-align: justify;
+}
+.homePage .homePageContainer .parcours .parcoursContainer .text .premiere .card .stage, .homePage .homePageContainer .parcours .parcoursContainer .text .deuxieme .card .stage {
+  display: flex;
+  justify-content: space-between;
+}
+.homePage .homePageContainer .parcours .parcoursContainer .text .premiere .card .stage a, .homePage .homePageContainer .parcours .parcoursContainer .text .deuxieme .card .stage a {
+  font-size: 1.2rem;
+  padding: 10px;
+  background-color: rgb(142, 14, 31);
+  border-radius: 7px;
+  cursor: pointer;
+  color: #e0e0e0;
+  transition: 0.3s ease-in-out;
+}
+.homePage .homePageContainer .parcours .parcoursContainer .text .premiere .card .stage a:hover, .homePage .homePageContainer .parcours .parcoursContainer .text .deuxieme .card .stage a:hover {
+  transform: scale(1.2);
+}
+.homePage .homePageContainer .parcours .parcoursContainer .text .premiere .card h4, .homePage .homePageContainer .parcours .parcoursContainer .text .deuxieme .card h4 {
+  font-size: 1.5rem;
+}
+.homePage .homePageContainer .parcours .parcoursContainer .text .premiere .card .divider, .homePage .homePageContainer .parcours .parcoursContainer .text .deuxieme .card .divider {
+  margin: 10px 0;
+}
+.homePage .homePageContainer .parcours .parcoursContainer .text .premiere .card p, .homePage .homePageContainer .parcours .parcoursContainer .text .deuxieme .card p {
+  font-size: 1.2rem;
+}
+.homePage .homePageContainer .veille {
+  max-width: 65%;
+  margin: 30px auto;
+}
+.homePage .homePageContainer .veille .veilleContainer {
+  text-align: justify;
+}
+.homePage .homePageContainer .veille .veilleContainer .card {
+  max-width: 70%;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px 20px;
+  border-radius: 20px;
+}
+.homePage .homePageContainer .veille .veilleContainer .card .name .who {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.homePage .homePageContainer .veille .veilleContainer .card .name .who h2 {
+  padding: 10px;
+  background-color: rgb(142, 14, 31);
+  border-radius: 7px;
+}
+.homePage .homePageContainer .veille .veilleContainer .card .name a {
+  color: var(--text-color);
+  cursor: alias;
+  position: relative;
+}
+.homePage .homePageContainer .veille .veilleContainer .card .name a::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: var(--text-color);
+  border-radius: 20px;
+  bottom: -5px;
+  left: 0;
+  transition: 0.3s ease-in-out;
+}
+.homePage .homePageContainer .veille .veilleContainer .card .name a:hover::after {
+  width: 100%;
+}
+.homePage .homePageContainer .veille .veilleContainer .card .name .divider {
+  margin: 10px 0;
+}
+.homePage .homePageContainer .veille .veilleContainer .card .text {
+  margin-top: 20px;
 }
 
 .navBar {
@@ -416,7 +509,7 @@ a {
   color: #e0e0e0;
 }
 .footer .footerContainer {
-  max-width: 90%;
+  max-width: 100%;
   margin: 0 auto;
 }
 .footer .footerContainer i {
@@ -470,6 +563,9 @@ a {
 }
 .footer .footerContainer .bottom p {
   margin-right: 150px;
+}
+.footer .footerContainer .bottom .linked {
+  padding: 0;
 }
 .footer .footerContainer .bottom #linked {
   border: none;
@@ -542,8 +638,11 @@ a {
   transform: rotateZ(360deg);
 }
 .homePageEnchere .homePageEnchereContainer .main {
-  max-width: 1200px;
+  max-width: 80%;
   margin: 0 auto;
+}
+.homePageEnchere .homePageEnchereContainer .main .mainContainer .resume {
+  margin: 40px;
 }
 .homePageEnchere .homePageEnchereContainer .main .mainContainer .top, .homePageEnchere .homePageEnchereContainer .main .mainContainer .bottom {
   display: grid;
@@ -583,6 +682,159 @@ a {
   width: 100%;
   border-radius: 20px;
 }
-.homePageEnchere .homePageEnchereContainer .main .mainContainer .end {
-  margin: 40px 0;
+
+.homePageStage .homePageStageContainer .header {
+  max-width: 80%;
+  margin: auto;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+.homePageStage .homePageStageContainer .header .logo {
+  font-family: Code, serif;
+  color: var(--text-color);
+}
+.homePageStage .homePageStageContainer .header .logo span {
+  color: rgb(142, 14, 31);
+}
+.homePageStage .homePageStageContainer .header #theme-switch {
+  background: rgba(128, 128, 128, 0.33);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.homePageStage .homePageStageContainer .header #theme-switch i {
+  transition: 0.7s ease-in-out;
+}
+.homePageStage .homePageStageContainer .header #theme-switch i:hover {
+  transform: rotateZ(360deg);
+}
+.homePageStage .homePageStageContainer .main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.homePageStage .homePageStageContainer .main .mainContainer .resume {
+  margin: 40px;
+}
+.homePageStage .homePageStageContainer .main .mainContainer .top, .homePageStage .homePageStageContainer .main .mainContainer .bottom {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+.homePageStage .homePageStageContainer .main .mainContainer .top .img-stage, .homePageStage .homePageStageContainer .main .mainContainer .bottom .img-stage {
+  margin-right: 20px;
+}
+.homePageStage .homePageStageContainer .main .mainContainer .top .img-stage img, .homePageStage .homePageStageContainer .main .mainContainer .bottom .img-stage img {
+  width: 100%;
+  border-radius: 20px;
+}
+.homePageStage .homePageStageContainer .main .mainContainer .top .text, .homePageStage .homePageStageContainer .main .mainContainer .bottom .text {
+  margin-left: 20px;
+  text-align: justify;
+}
+.homePageStage .homePageStageContainer .main .mainContainer .bottom {
+  grid-template-columns: 40% 60%;
+  margin-top: 40px;
+}
+.homePageStage .homePageStageContainer .main .mainContainer .bottom .img-stage {
+  margin-left: 20px;
+}
+.homePageStage .homePageStageContainer .main .mainContainer .bottom .img-stage img {
+  width: 100%;
+  border-radius: 20px;
+}
+.homePageStage .homePageStageContainer .main .mainContainer .bottom .text {
+  margin-right: 20px;
+  text-align: justify;
+}
+.homePageStage .homePageStageContainer .main .mainContainer img {
+  width: 100%;
+  border-radius: 20px;
+}
+.homePageStage .homePageStageContainer .main .mainContainer .center .img-mid img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.homePageDrive .homePageDriveContainer .header {
+  max-width: 80%;
+  margin: auto;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+.homePageDrive .homePageDriveContainer .header .logo {
+  font-family: Code, serif;
+  color: var(--text-color);
+}
+.homePageDrive .homePageDriveContainer .header .logo span {
+  color: rgb(142, 14, 31);
+}
+.homePageDrive .homePageDriveContainer .header #theme-switch {
+  background: rgba(128, 128, 128, 0.33);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.homePageDrive .homePageDriveContainer .header #theme-switch i {
+  transition: 0.7s ease-in-out;
+}
+.homePageDrive .homePageDriveContainer .header #theme-switch i:hover {
+  transform: rotateZ(360deg);
+}
+.homePageDrive .homePageDriveContainer .main {
+  max-width: 80%;
+  margin: 0 auto;
+}
+.homePageDrive .homePageDriveContainer .main .mainContainer .resume {
+  margin: 40px;
+}
+.homePageDrive .homePageDriveContainer .main .mainContainer .top, .homePageDrive .homePageDriveContainer .main .mainContainer .bottom {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+.homePageDrive .homePageDriveContainer .main .mainContainer .top .img-enchere, .homePageDrive .homePageDriveContainer .main .mainContainer .bottom .img-enchere {
+  margin-right: 20px;
+}
+.homePageDrive .homePageDriveContainer .main .mainContainer .top .img-enchere img, .homePageDrive .homePageDriveContainer .main .mainContainer .bottom .img-enchere img {
+  width: 100%;
+  border-radius: 20px;
+}
+.homePageDrive .homePageDriveContainer .main .mainContainer .top .text, .homePageDrive .homePageDriveContainer .main .mainContainer .bottom .text {
+  margin-left: 20px;
+  text-align: justify;
+}
+.homePageDrive .homePageDriveContainer .main .mainContainer .bottom {
+  grid-template-columns: 40% 60%;
+  margin-top: 40px;
+}
+.homePageDrive .homePageDriveContainer .main .mainContainer .bottom .img-enchere {
+  margin-left: 20px;
+}
+.homePageDrive .homePageDriveContainer .main .mainContainer .bottom .img-enchere img {
+  width: 100%;
+  border-radius: 20px;
+}
+.homePageDrive .homePageDriveContainer .main .mainContainer .bottom .text {
+  margin-right: 20px;
+  text-align: justify;
+}
+.homePageDrive .homePageDriveContainer .main .mainContainer img {
+  width: 100%;
+  border-radius: 20px;
+}
+.homePageDrive .homePageDriveContainer .main .mainContainer .center .img-mid img {
+  width: 100%;
+  border-radius: 20px;
 }/*# sourceMappingURL=index.css.map */

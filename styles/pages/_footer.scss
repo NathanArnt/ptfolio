@@ -4,7 +4,7 @@
     border-radius: 50px 50px 0 0;
     color: $white;
     .footerContainer { 
-        max-width: 90%;
+        max-width: 100%;
         margin: 0 auto;
         
         i {
@@ -60,6 +60,9 @@
                 align-items: center;
                 p {
                     margin-right: 150px;
+                }
+                .linked {
+                    padding: 0;
                 }
                 #linked {
                     border: none;

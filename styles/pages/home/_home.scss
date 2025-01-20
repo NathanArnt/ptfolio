@@ -39,7 +39,7 @@
         .about {
             margin: 20px auto;
             max-width: 65%;
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             .aboutContainer {
                 .me {
                     text-align: center;
@@ -69,7 +69,7 @@
                         flex-wrap: wrap;
                         font-size: 1.2rem;
                         text-align: justify;
-                        margin: 10px;
+                        padding-right: 20px;
 
                      a {  
                         font-weight: bold;
@@ -88,8 +88,7 @@
                      }
                     }
                     img {
-                        margin:  10px;
-                        width: 80%;
+                        max-width: 100%;
                         border-radius: 10px;
                     } // img
                 } // info
@@ -99,6 +98,7 @@
                         
                         h3 {
                             padding-bottom: 10px;
+                            font-size: 1.5rem;
                         }
                         p {
                             padding: 20px 0;
@@ -225,24 +225,26 @@
         } //documents
         .projets {
             max-width: 65%;
-            margin: auto;
+            margin: 0 auto;
             .projetsContainer {
 
                 .cardContainer {
-                    display: grid;
-                    grid-template-columns: repeat(3, 1fr);
-                }
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                
                 .card {
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: cover;
-                    width: 350px;
+                    width: 80%;
                     height: 350px;
                     border-radius: 10px;
                     position: relative;
                     display: flex;
-                    padding: 15px;
                     overflow: hidden;
+                    margin: 0 10px;
                 
                     .info {
                         box-shadow: 0 0 1rem #0003;
@@ -294,7 +296,8 @@
                             i {
                                 padding-right: 5px;
                             }
-                        }        
+                        }       
+                    } 
                     }
                 }
             }
@@ -303,8 +306,102 @@
             max-width: 65%;
             margin: 0 auto;
             .parcoursContainer {
+                .text {
+                    .semaines {
+                        text-align: center;
+                        font-size: 1.2rem;
+                    }
+                    .premiere, .deuxieme {
+                        margin: 20px 0;
+                        background: #0003;
+                        padding: 20px; 
+                        border-radius: 20px;
+                        .card{
+                            text-align: justify;
+                            .stage {
+                                display: flex;
+                                justify-content: space-between;
+
+                                a {
+                                    font-size: 1.2rem;
+                                    padding: 10px;
+                                    background-color: $red;
+                                    border-radius: 7px;
+                                    cursor: pointer;
+                                    color: $white;
+                                    transition: 0.3s ease-in-out;
+                                    &:hover {
+                                        transform: scale(1.2);
+                                    }
+                                }
+                            }
+                            h4 {
+                                font-size: 1.5rem;
+                            }
+                            .divider {
+                                margin: 10px 0;
+                            }
+                            p {
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                }
+            } // parcoursContainer
+        } // parcours 
+        .veille {
+            max-width: 65%;
+            margin: 30px auto;
+            .veilleContainer {
                 text-align: justify;
-            }
-        }
+                .card {
+                    max-width: 70%;
+                    margin: 0 auto;
+                    background: #0003;
+                    padding: 20px 20px;
+                    border-radius: 20px;
+
+                    .name {
+                        .who {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            h2 {
+                                padding: 10px;
+                                background-color: $red;
+                                border-radius: 7px;
+                            }
+                        }
+                        a {
+                            color: var(--text-color);
+                            cursor:alias ;
+                            position: relative;
+                            
+                            &::after {
+                                position: absolute;
+                                content: '';
+                                width: 0%;
+                                height: 2px;
+                                background-color: var(--text-color);
+                                border-radius: 20px;
+                                bottom: -5px;
+                                left: 0;
+                                transition: 0.3s ease-in-out;
+                            }
+                            &:hover::after {
+                                width: 100%;
+                            }
+                        }
+                        .divider {
+                            margin: 10px 0;
+                        }
+                    }
+                    .text {
+                        margin-top: 20px;
+                    }
+                }
+            } // veilleContainer
+        } // veille
     } // homePageContainer
 } //homePage

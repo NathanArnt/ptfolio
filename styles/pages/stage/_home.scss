@@ -1,5 +1,5 @@
-.homePageEnchere {
-    .homePageEnchereContainer {
+.homePageStage {
+    .homePageStageContainer {
         
         .header {
             max-width: 80%;
@@ -36,7 +36,7 @@
             }
         }
         .main {
-            max-width: 80%;
+            max-width: 1200px;
             margin: 0 auto;
             .mainContainer {
                 .resume {
@@ -45,7 +45,7 @@
                 .top, .bottom{
                     display: grid;
                     grid-template-columns: 60% 40%;
-                    .img-enchere {
+                    .img-stage {
                         img {
                             width: 100%;
                             border-radius: 20px;
@@ -60,7 +60,7 @@
                 .bottom {
                     grid-template-columns: 40% 60%;
                     margin-top: 40px;
-                    .img-enchere {
+                    .img-stage {
                         img {
                             width: 100%;
                             border-radius: 20px;
