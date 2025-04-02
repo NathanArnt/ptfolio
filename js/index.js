@@ -20,5 +20,5 @@ themeSwitch.addEventListener("click", () => {
 
 
 function openPdf() {
-  window.open('./assets/TableauSynthese-Nathan.pdf', '_blank');
+  window.open('./assets/Tableau.pdf', '_blank');
 }
