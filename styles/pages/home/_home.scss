@@ -65,13 +65,23 @@
 
                     .text {
                         display: flex;
-                        align-content: space-between;
-                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        flex-direction: column;
                         font-size: 1.2rem;
-                        text-align: justify;
-                        padding-right: 20px;
+                        
+                        .line {
+                            display: flex;
+                            align-items: center;
+                            img {
+                                width: 10%;
+                                margin-right: 20px;
+                            }
+                        }
+
 
                      a {  
+                        margin: 0 auto;
+                        align-self: flex-start;
                         font-weight: bold;
                         background-color: $red;
                         border: 2px solid $red;
@@ -87,11 +97,139 @@
                         }
                      }
                     }
-                    img {
-                        max-width: 100%;
-                        border-radius: 10px;
+                    .imgDev {
+                        img {
+                            max-width: 80%;
+                            margin-left: 20%;
+                            border-radius: 10px;
+                        }
                     } // img
                 } // info
+    
+            } // aboutContainer
+        } // about
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .parcours {
+            max-width: 65%;
+            margin: 0 auto;
+            .parcoursContainer {
+                position: relative;
+
+                .title {
+                    margin: 40px auto 80px auto;
+                    text-align: center;
+                    position: relative;
+
+                    p {
+                        font-size: 1.6rem;
+                    }
+
+                    .divider {
+                        margin: 20px auto;
+                        height: 4px;
+                        width: 50px;
+                        background: $red;
+                        border-radius: 20px;
+                    }
+                }
+
+                .timeline-lines {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    pointer-events: none;
+                    z-index: 0;
+
+                    path {
+                        stroke: #e63946;
+                        stroke-width: 2;
+                        fill: none;
+                        stroke-dasharray: 1000;
+                        stroke-dashoffset: 1000;
+                    }
+                }
+                .timeline {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 100px;
+                    position: relative;
+                    z-index: 1;
+
+                    .card {
+                        width: 320px;
+                        background-color: #0003;
+                        padding: 20px;
+                        border-radius: 20px;
+                        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+                        animation: float 4s ease-in-out infinite;
+                        position: relative;
+
+                        .titre {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin-bottom: 10px;
+
+                            h2 {
+                                font-size: 1.3rem;
+                                margin: 0;
+                            }
+
+                            a {
+                                font-size: 0.9rem;
+                                text-decoration: none;
+                                color: $white;
+                                background-color: $red;
+                                padding: 5px 10px;
+                                border-radius: 8px;
+                                transition: 0.2s;
+
+                                &:hover {
+                                background-color: darken($red, 10%);
+                                }
+                            }
+                        }
+
+                        .divider {
+                            margin: 10px 0;
+                        }
+
+                        p {
+                            margin: 5px 0;
+                        }
+
+                        &.left {
+                            align-self: flex-start;
+                            animation-delay: 0s;
+                        }
+
+                        &.right {
+                            align-self: flex-end;
+                            animation-delay: 1s;
+                        }
+
+                        &:nth-of-type(5) {
+                            animation-delay: 2s;
+                        }
+                    }
+                }
+            }
+        }
+        .bts {
+            max-width: 65%;
+            margin: auto;
+            .btsContainer {
                 .bts {
                     text-align: justify;
                     .description {
@@ -132,9 +270,8 @@
                         }
                     }
                 }
-            } // aboutContainer
-        } // about
-
+            }
+        }
         .skills {
             max-width: 65%;
             margin: auto;
@@ -302,53 +439,20 @@
                 }
             }
         }
-        .parcours {
+        .certification {
             max-width: 65%;
             margin: 0 auto;
-            .parcoursContainer {
-                .text {
-                    .semaines {
-                        text-align: center;
-                        font-size: 1.2rem;
-                    }
-                    .premiere, .deuxieme {
-                        margin: 20px 0;
-                        background: #0003;
-                        padding: 20px; 
-                        border-radius: 20px;
-                        .card{
-                            text-align: justify;
-                            .stage {
-                                display: flex;
-                                justify-content: space-between;
-
-                                a {
-                                    font-size: 1.2rem;
-                                    padding: 10px;
-                                    background-color: $red;
-                                    border-radius: 7px;
-                                    cursor: pointer;
-                                    color: $white;
-                                    transition: 0.3s ease-in-out;
-                                    &:hover {
-                                        transform: scale(1.2);
-                                    }
-                                }
-                            }
-                            h4 {
-                                font-size: 1.5rem;
-                            }
-                            .divider {
-                                margin: 10px 0;
-                            }
-                            p {
-                                font-size: 1.2rem;
-                            }
-                        }
-                    }
+            .certificationContainer {
+                .certif {
+                    display: flex;
+                    align-items: center;      // Centre verticalement
+                    justify-content: center;  // Centre horizontalement
+                    gap: 30px;                // Espace entre les certificats
+                    width: 100%;
+                    min-height: 500px;        // S'assure que le centrage vertical fonctionne même si peu de contenu
                 }
-            } // parcoursContainer
-        } // parcours 
+            }
+        }
         .veille {
             max-width: 65%;
             margin: 30px auto;

@@ -21,8 +21,9 @@
                     <div class="navBarContainer">
                         <a href="#home"><i class="fa-solid fa-house"></i></a>
                         <a href="#about"><i class="fa-solid fa-user"></i></a>
-                        <a href="#skills"><i class="fa-solid fa-book"></i></a>
                         <a href="#parcours"><i class="fa-solid fa-briefcase"></i></a>
+                        <a href="#skills"><i class="fa-solid fa-book"></i></a>
+                        <a href="#projets"><i class="fa-solid fa-code"></i></a>
                         <a href="#veille"><i class="fa-solid fa-pencil"></i></a>
                         <a href="#footer"><i class="fa-solid fa-envelope"></i></a>
                     </div>
@@ -50,19 +51,82 @@
                     </div>
                     <div class="info">
                         <div class="text">
-                            <p>
-                                Je suis actuellement étudiant en BTS Services Informatiques aux Organisations (SIO) option SLAM au lycée Félix Le Dantec à Lannion. J'ai pris goût à l'informatique dès le plus jeune âge, à 10 ans j'avais déjà un clavier et une souris dans les mains. Cet enthousiasme pour l'informatique a évolué au fil des années, et c'est tout naturellement que j'ai choisi de m'orienter vers ce domaine pour mon parcours scolaire et mon projet professionnel. Le développement de logiciels et d'applications m'attire car il combine logique, créativité et résolution de problèmes.
-                            </p>
+                            <div class="line">
+                                <img src="./assets/img/livres.png" alt="Image localisation">
+                                <p>Etudiant en BTS SIO SLAM.</p>
+                            </div>
+                            <div class="line">
+                                <img src="./assets/img/pin.png" alt="Image localisation">
+                                <p>Lycée Felix Le Dantec.</p>
+                            </div>
+                            <div class="line">
+                                <img src="./assets/img/diplome.png" alt="Image localisation">
+                                <p>Titulaire d'un Bac Pro SN.</p>
+                            </div>
+                            <div class="line">
+                                <img src="./assets/img/laptop.png" alt="Image localisation">
+                                <p>Passionné d'informatique depuis tout jeune.</p>
+                            </div>
                             <a class="btnContact" href="#footer">Contactez-moi</a>
                         </div>
-                        <div class="img">
+                        <div class="imgDev">
                             <img src="./assets/img/91c4565c774a9cacc7274bc273101cca.jpg" alt="img">
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="parcours">
+            <div class="parcoursContainer" id="parcours">
+                <div class="title">
+                    <p>Parcours personnel</p>
                     <div class="divider"></div>
+                </div>
+
+                <!-- Lignes SVG -->
+                <svg id="timeline-lines" class="timeline-lines"></svg>
+
+                <div class="timeline">
+                    <div class="card left" id="card1">
+                        <div class="titre">
+                            <h2>Bac Professionnel SN</h2>
+                        </div>
+                        <p>2020 - 2023</p>
+                        <div class="divider"></div>
+                        <p>Option RISC (Réseaux Informatiques et Systèmes Communicants)</p>
+                    </div>
+
+                    <div class="card right" id="card2">
+                        <div class="titre">
+                            <h2>Stage première année</h2>
+                            <a href="./pages/stage.html">Découvrir</a>
+                        </div>
+                        <p>2024 - 5 semaines</p>
+                        <div class="divider"></div>
+                            <p>Entreprise "Office Assistance"</p>
+                            <p>Framework React</p>
+                    </div>
+                
+                    <div class="card left" id="card3">
+                        <div class="titre">
+                            <h2>Stage deuxième année</h2>
+                            <a href="./pages/stage2.html">Découvrir</a>
+                        </div>
+                        <p>2025 - 7 semaines</p>
+                        <div class="divider"></div>
+                            <p>Entreprise "Fox-In Studio"</p>
+                            <p>Framework NextJs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bts">
+                <div class="btsContainer" id="bts">
+                    <div class="title">
+                        <p>Présentation du BTS</p>
+                        <div class="divider"></div>
+                    </div>
                     <div class="bts">
                         <div class="description">
-                            <h3>Présentation du BTS SIO</h3>
                             <p>Le BTS SIO c'est le Brevet de Technicien Supérieur aux Services Informatiques aux Organisations, il permet de se former aux métiers de l'informatique en deux ans. Il propose deux spécialités qui sont : l'option SLAM (L’option Solutions logicielles et applications métiers) et l'option SISR (Solution d’infrastructure, systèmes et réseaux).</p>
                         </div>
                         <div class="options">
@@ -248,71 +312,15 @@
                     </div>
                 </div>
             </div>
-            <div class="parcours">
-                <div class="parcoursContainer" id="parcours">
+            <div class="certification">
+                <div class="certificationContainer" id="certification">
                     <div class="title">
-                        <p>Parcours personnel</p>
+                        <p>Certification</p>
                         <div class="divider"></div>
                     </div>
-                    <div class="text">
-                        <div class="premiere">
-                            <div class="card">
-                                <div class="stage">
-                                    <h1>Parcours au lycée</h1>
-                                </div>
-                                <p>2020 - 2023 </p>
-                                <div class="divider"></div>
-                                <p>Bac Professionnel Système Numérique</p>
-                                <p>
-                                    J'ai intégré ce bac professionnel en raison de ma grande passion envers l'informatique. J'adorais monter, dépanner et changer les pièces de mon ordinateur et j'étais déjà très tourné vers les nouvelles technologies.
-                                    Durant ce bac professionnel j'ai cumulé différentes expériences en tant que stagiaire dans de petites boutiques de réparation et dépannage informatique. C'était mes premiers pas dans le monde professionnel et notamment avec le contact et le besoin du client.
-                                    J'étais bien entouré et je prenais plaisir à intervenir avec mes maitres de stages sur différents cas et installations.
-                                </p>
-                            </div>
-                        </div>
-                        <p class="semaines">
-                            J'ai alors tout naturellement intégré le BTS SIO, toujours en relation avec ma passion et mon atrait pour l'informatique.
-                        </p>
-                        <p class="semaines">
-                            Lors de ces deux années de formation j'ai pu effectué 12 semaines de stages en entreprise.
-                        </p>
-                        <div class="premiere">
-                            <div class="card">
-                                <div class="stage">
-                                    <h4>Stage première année</h4>
-                                    <a href="./pages/stage.html">Découvrir</a>
-                                </div>
-                                <p>2024 - 5 semaines</p>
-                                <div class="divider"></div>
-                                <p>Entreprise "Office Assistance"</p>
-                                <p>Lors de cette période de stage j'ai eu l'occasion de travailler avec un camarade de classe en binôme sur un projet utilisant les technologies React et Django.
-                                    Mon camarade s'est notamment occupé de la partie backend / API avec le framework python nommé djangoRestAPI.
-                                    De mon côté j'ai fait la partie frontend ainsi que la récupération et l'exploitation des données de l'api.
-                                    Ce jeu consistait en une partie de donjon où l'utilisateur possède un personnage et peu avancer de case en case pour récupérer des objets en ouvrant des coffres.
-                                    Parfois il tombe également sur des monstres qu'il doit combattre pour continuer d'explorer le donjon.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="deuxieme">
-                            <div class="card">
-                                <div class="stage">
-                                    <h4>Stage deuxième année</h4>
-                                    <a href="./pages/stage2.html">Découvrir</a>
-                                </div>
-                                <p>2025 - 7 semaines</p>
-                                <div class="divider"></div>
-                                <p>Entreprise "Fox-In Studio"</p>
-                                <p>Durant cette seconde période de stage j'ai eu l'opportunité de travailler sur une technologie qui m'interessait depuis un moment, le framework de JavaScript "NextJs". 
-                                    Durant la première semaine mon tuteur m'a d'abord donné des exercices afin que je m'aclimate à la technologie et aux possibilités qu'elle offre. 
-                                    Par la suite j'ai tant bien que mal essayé d'intégré son projet de création de site internet pour son serveur Minecraft mais n'ayant pas les capacités requises j'ai alors créé de petits projets en local pour gagner en compétences. 
-                                    Ce stage fut enrichissant en developpement personnel car j'ai dû apprendre à progresser et me documenter seul sur une toute nouvelle technologie pour moi. 
-                                    J'ai beacuoup gagné en expérience, en bonnes pratiques et en compétences.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cursus">
-
+                    <div class="certif">
+                        <embed src="./assets/CertificationPix.pdf" width="33%" height="500px"></embed>
+                        <embed src="./assets/AttestationAnssi.pdf" width="33%" height="500px"></embed>
                     </div>
                 </div>
             </div>
