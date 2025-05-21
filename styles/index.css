@@ -295,7 +295,6 @@ a {
 }
 .homePage .homePageContainer .parcours .parcoursContainer .timeline .card a:hover {
   background-color: #600915;
-  transform: scale(2);
 }
 .homePage .homePageContainer .parcours .parcoursContainer .timeline .card p {
   margin: 15px 0;
