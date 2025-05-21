@@ -273,7 +273,6 @@ a {
 }
 .homePage .homePageContainer .parcours .parcoursContainer .timeline .card .titre {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
 }
@@ -281,23 +280,25 @@ a {
   font-size: 1.3rem;
   margin: 0;
 }
-.homePage .homePageContainer .parcours .parcoursContainer .timeline .card .titre a {
+.homePage .homePageContainer .parcours .parcoursContainer .timeline .card .divider {
+  margin: 10px 0;
+}
+.homePage .homePageContainer .parcours .parcoursContainer .timeline .card a {
   font-size: 0.9rem;
   text-decoration: none;
   color: #e0e0e0;
   background-color: rgb(142, 14, 31);
-  padding: 5px 10px;
+  padding: 10px 20px;
+  transform: scale(1);
   border-radius: 8px;
   transition: 0.2s;
 }
-.homePage .homePageContainer .parcours .parcoursContainer .timeline .card .titre a:hover {
+.homePage .homePageContainer .parcours .parcoursContainer .timeline .card a:hover {
   background-color: #600915;
-}
-.homePage .homePageContainer .parcours .parcoursContainer .timeline .card .divider {
-  margin: 10px 0;
+  transform: scale(2);
 }
 .homePage .homePageContainer .parcours .parcoursContainer .timeline .card p {
-  margin: 5px 0;
+  margin: 15px 0;
 }
 .homePage .homePageContainer .parcours .parcoursContainer .timeline .card.left {
   align-self: flex-start;

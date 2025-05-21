@@ -177,7 +177,6 @@
 
                         .titre {
                             display: flex;
-                            justify-content: space-between;
                             align-items: center;
                             margin-bottom: 10px;
 
@@ -186,27 +185,31 @@
                                 margin: 0;
                             }
 
-                            a {
-                                font-size: 0.9rem;
-                                text-decoration: none;
-                                color: $white;
-                                background-color: $red;
-                                padding: 5px 10px;
-                                border-radius: 8px;
-                                transition: 0.2s;
-
-                                &:hover {
-                                background-color: darken($red, 10%);
-                                }
-                            }
+                           
                         }
 
                         .divider {
                             margin: 10px 0;
                         }
 
+                        a {
+                            font-size: 0.9rem;
+                            text-decoration: none;
+                            color: $white;
+                            background-color: $red;
+                            padding: 10px 20px;
+                            transform: scale(1);
+                            border-radius: 8px;
+                            transition: 0.2s;
+
+                            &:hover {
+                                background-color: darken($red, 10%);
+                                transform: scale(2);
+                            }
+                        }
+
                         p {
-                            margin: 5px 0;
+                            margin: 15px 0;
                         }
 
                         &.left {
